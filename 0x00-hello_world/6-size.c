@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Description: A C program prints the size of various types on the computer it is compiled and run on
+ * Description: A C program prints the size of various types
  *
  * Return: alwys 0 (success)
 */
