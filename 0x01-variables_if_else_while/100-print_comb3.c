@@ -4,7 +4,7 @@
 /**
  * main - entry point
  *
- * Description: prints the alphabet in lowercase and uppercase.
+ * Description: prints all possible different combinations of two digits.
  *
  * Return: always 0 (success)
 */
