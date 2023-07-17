@@ -18,12 +18,15 @@ int main(void)
 		{
 			putchar(48 + d1);
 			putchar(48 + d2);
-			putchar(',');
-			putchar(' ');
+			if (!(d1 == 8 && d2 == 9))
+			{
+				putchar(',');
+				putchar(' ');
+			}
 			d2++;
 		}
 		d1++;
-		d2++;
+		d2 = d1 + 1;
 	}
 	putchar('\n');
 	return (0);
