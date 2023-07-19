@@ -1,17 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - entry point
+ * print_alphabet - A C function that prints the alphabet
  *
- * Description: A C program that prints the alphabet
- *
- * Return: always 0 (success)
 */
 
 void print_alphabet(void)
-{	
-	char c = 'a';
-	
+{
+	int c = 'a';
+
 	while (c <= 'z')
 	{
 		putchar(c);
