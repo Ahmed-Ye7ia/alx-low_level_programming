@@ -18,9 +18,3 @@ void print_alphabet(void)
 		c++;
 	}
 }
-
-int main(void)
-{
-	print_alphabet();  
-	return (0);
-}
