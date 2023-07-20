@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _isdigit - A C function that checks for lowercase character
+ * _isdigit - A C function that checks for digit
  *
  * @c: char the will check on it
  *
- * Return: 0 if uppercase 1 if lowercase
+ * Return: 1 if digit 0 otherwise
 */
 
 int _isdigit(int c)
