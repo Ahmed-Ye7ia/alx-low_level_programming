@@ -9,11 +9,14 @@
 
 void print_line(int n)
 {
+	int i = 1;
+
 	if (n > 0)
 	{
-		for (int i = 1 ; i <= n ; i++)
+		while (i <= n)
 		{
 			_putchar(95);
+			i++;
 		}
 	}
 	_putchar('\n');
