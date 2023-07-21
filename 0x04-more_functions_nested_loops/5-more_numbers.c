@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "main.h"
+
 /**
  * more_numbers - A C function that prints 10 times from 0 to 14
 */
