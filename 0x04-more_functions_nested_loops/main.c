@@ -3,17 +3,17 @@
 int main() {
     int i = 0;
         int k = 1, j = 0;
-    int size =5;
+    int size =5	;
         if (size > 0)
         {
-                while (i <= size)
+                while (i < size)
                 {
-                        while (k <= size)
+                        while (k < size)
                         {
                                 putchar(' ');
                                 k++;
                         }
-                        while (j <= i)
+                        while (j < i+1)
                         {
                                 putchar(35);
                                 j++;
