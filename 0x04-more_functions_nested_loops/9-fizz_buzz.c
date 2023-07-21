@@ -10,16 +10,19 @@
 
 int main(void)
 {
-	for (int i = 1 ; i <= 100 ; i++)
+	int i = 1;
+	while (i <= 100)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz ");
+			i++;
 			continue;
 		}
 		else if (i % 3 == 0)
 		{
 			printf("Fizz ");
+			i++;
 			continue;
 		}
 		else if (i % 5 == 0)
@@ -27,15 +30,18 @@ int main(void)
 			if (i == 100)
 			{
 				printf("Buzz");
+				i++;
 				continue;
 			}
 			else
 			{
 				printf("Buzz ");
+				i++;
 				continue;
 			}
 		}
 		printf("%d ", i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
