@@ -15,8 +15,11 @@ void print_most_numbers(void)
 			i++;
 			continue;
 		}
-		_putchar(48 + i);
-		i++;
+		else
+		{
+			_putchar(48 + i);
+			i++;
+		}
 	}
 	_putchar('\n');
 }
