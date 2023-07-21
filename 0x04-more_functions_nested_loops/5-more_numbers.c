@@ -1,0 +1,24 @@
+/**
+ * more_numbers - A C function that prints 10 times from 0 to 14
+*/
+
+void more_numbers(void)
+{
+	int i, num, count;
+
+	for (i = 0 ; i <= 9 ; i++)
+	{
+		for (count = 0 ; count < 14 ; count++)
+		{
+			num = count;
+			if (count > 9)
+			{
+				_putchar(49);
+				num = count % 10;
+
+			}
+			_putchar(48 + num);
+		}
+	}
+	_putchar('\n');
+}
