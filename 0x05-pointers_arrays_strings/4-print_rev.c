@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_rev - A C function prints a string in reverse.
  *
