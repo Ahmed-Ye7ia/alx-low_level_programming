@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcat - A C funtion that appends the src string to the dest string
+ * *_strncat - A C funtion that appends the src string to the dest string
  *
  * @dest: the first string
  *
@@ -19,7 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		;
 	}
-	for (j  0; j < n; j++)
+	for (j = 0; j < n; j++)
 	{
 		dest[i++] = src[j];
 	}
