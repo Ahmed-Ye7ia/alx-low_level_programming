@@ -10,20 +10,20 @@
 
 char *leet(char *str)
 {
-	int i = 0, j;
+	int j;
 	char key[] = {'A', 'E', 'O', 'T', 'L'};
 	int value[] = {4, 3, 0, 7, 1};
 
-	while (str[i] != '\0')
+	while (*str)
 	{
 		for (j = 0; j < 4; j++)
 		{
-			if (str[i] == key[j] || str[i] == key[j] + 32)
+			if (*str == key[j] || *str == key[j] + 32)
 			{
-				str[i] = 48 + value[j];
+				*str = 48 + value[j];
 			}
 		}
-		i++;
+		str++;
 	}
 	return (str);
 }
