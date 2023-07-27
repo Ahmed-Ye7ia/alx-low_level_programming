@@ -10,29 +10,18 @@
 
 char *leet(char *str)
 {
-	int i = 0;
+	int i = 0, j;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
 
 	while (str[i] != '\0')
 	{
-		if (str[i] == 69 || str[i] == 101)
+		for (j = 0; j < 4; j++)
 		{
-			str[i] = 51;
-		}
-		else if (str[i] == 65 || str[i] == 97)
-		{
-			str[i] = 52;
-		}
-		else if (str[i] == 79 || str[i] == 111)
-		{
-			str[i] = 48;
-		}
-		else if (str[i] == 84 || str[i] == 116)
-		{
-			str[i] = 55;
-		}
-		else if (str[i] == 76 || str[i] == 108)
-		{
-			str[i] = 49;
+			if (str[i] == key[j] || str[i] == key[j] + 32)
+			{
+				str[i] = 48 + value[j];
+			}
 		}
 		i++;
 	}
