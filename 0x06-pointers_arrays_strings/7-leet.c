@@ -26,11 +26,11 @@ char *leet(char *str)
 		{
 			str[i] = 48;
 		}
-		else if (str[i] == 84 && str[i] == 116)
+		else if (str[i] == 84 || str[i] == 116)
 		{
 			str[i] = 55;
 		}
-		else if (str[i] == 76 && str[i] == 108)
+		else if (str[i] == 76 || str[i] == 108)
 		{
 			str[i] = 49;
 		}
