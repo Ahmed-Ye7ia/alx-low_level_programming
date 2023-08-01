@@ -8,13 +8,15 @@
  * @b: a character that we will fill the memory with it
  *
  * @n: the number number of bytes
+ *
+ * Return: the pointer after change
 */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
 
-	for(i = 0; i < n ; i++)
+	for (i = 0; i < n ; i++)
 	{
 		s[i] = b;
 	}
