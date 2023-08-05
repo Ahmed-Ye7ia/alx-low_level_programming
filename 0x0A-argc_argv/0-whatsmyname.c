@@ -6,11 +6,11 @@
  *
  * @argv: array of arguments
  *
- * Return: always 0 
+ * Return: always 0
 */
 
-int main(char const *argv[],int argc)
+int main(char const *argv[], int argc)
 {
-	printf ("%s\n", argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
