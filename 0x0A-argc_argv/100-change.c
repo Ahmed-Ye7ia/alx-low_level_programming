@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int cents = atoi(argv[1]);
 	int money[] = {25, 10, 5, 2, 1};
 
-	if (cents < 1)
+	if (argc != 2)
 	{
 		printf("%s\n", "Error");
 		return (1);
