@@ -1,10 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * main - entry point
+ *
+ * @argc: numbers of commands
+ *
+ * @argv: pointer to array of char which contain the commands
+ *
+ * Return: 0 for success
+*/
 int main(int argc, char *argv[])
 {
-	int count = 0;
+	int count = 0, i;
 	int cents = atoi(argv[1]);
+	int money[] = {25, 10, 5, 2, 1};
 
 	if (cents < 1)
 	{
@@ -13,32 +22,16 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		while (cents != 0)
+		for (i = 0; i < 5; i++)
 		{
-			if (cents >= 25)
+			if (cents >= money[i])
 			{
-				cents -= 25;
-				count++;
-			}
-			else if (cents >= 10)
-			{
-				cents -= 10;
-				count++;
-			}
-			else if (cents >= 5)
-			{
-				cents -= 5;
-				count++;
-			}
-			else if (cents >= 2)
-			{
-				cents -= 2;
-				count++;
-			}
-			else
-			{
-				cents -= 1;
-				count++;
+				count += cents / money[i];
+				cents %= money[i];
+				if (cents % money[i] == 0)
+				{
+					break;
+				}
 			}
 		}
 	}
