@@ -15,12 +15,7 @@ int main(int argc, char *argv[])
 	int cents = atoi(argv[1]);
 	int money[] = {25, 10, 5, 2, 1};
 
-	if (argc != 2)
-	{
-		printf("%s\n", "Error");
-		return (1);
-	}
-	else
+	if (argc == 2)
 	{
 		for (i = 0; i < 5; i++)
 		{
@@ -35,6 +30,12 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
+	else
+	{
+		printf("%s\n", "Error");
+                return (1);
+	}
+
 	printf("%d\n", count);
 	return (0);
 }
