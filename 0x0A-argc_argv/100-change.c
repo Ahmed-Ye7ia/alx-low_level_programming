@@ -29,13 +29,12 @@ int main(int argc, char *argv[])
 				}
 			}
 		}
+		printf("%d\n", count);
 	}
 	else
 	{
 		printf("%s\n", "Error");
-                return (1);
+		return (1);
 	}
-
-	printf("%d\n", count);
 	return (0);
 }
