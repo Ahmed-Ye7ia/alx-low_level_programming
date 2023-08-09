@@ -24,10 +24,9 @@ char *_strdup(char *str)
 
 	ptr = malloc(size + 1);
 
-	if (str == NULL)
+	if (ptr == NULL)
 	{
 		printf("%s\n", "failed to allocate memory");
-		return (NULL);
 	}
 	else
 	{
