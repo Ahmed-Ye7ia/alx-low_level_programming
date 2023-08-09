@@ -13,6 +13,10 @@ char *_strdup(char *str)
 	char *ptr;
 	int i, size;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	for (size = 0; str[size] != '\0'; size++)
 	{
 		;
@@ -20,7 +24,7 @@ char *_strdup(char *str)
 
 	ptr = malloc(size + 1);
 
-	if (str == NULL || ptr == NULL)
+	if (str == NULL)
 	{
 		printf("%s\n", "failed to allocate memory");
 	}
