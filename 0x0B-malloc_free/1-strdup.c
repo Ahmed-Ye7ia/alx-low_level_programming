@@ -28,7 +28,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		printf ("%s\n", "failed to allocate memory")
+		printf ("%s\n", "failed to allocate memory");
 	}
 
 	return (ptr);
