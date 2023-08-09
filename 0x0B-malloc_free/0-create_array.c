@@ -22,5 +22,9 @@ char *create_array(unsigned int size, char c)
 			ptr[i] = c;
 		}
 	}
+	else
+	{
+		printf("%s\n", "failed to allocate memory");
+	}
 	return (ptr);
 }
