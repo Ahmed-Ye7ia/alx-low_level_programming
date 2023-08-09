@@ -40,7 +40,7 @@ char **strtow(char *str)
 	n = wrdcnt(str);
 	if (n == 1)
 		return (NULL);
-	w = (char **)malloc(n sizeof(char *));
+	w = (char **)malloc(n * sizeof(char *));
 	if (w == NULL)
 		return (NULL);
 	w[n - 1] = NULL;
@@ -65,7 +65,7 @@ char **strtow(char *str)
 			for (l = 0; l < j; l++)
 				w[wc][l] = str[i + l];
 			w[wc][l] = '\0';
-			WC++;
+			wc++;
 			i += j;
 		}
 		else
