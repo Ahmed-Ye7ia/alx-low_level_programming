@@ -19,17 +19,17 @@ char *_strdup(char *str)
 	}
 
 	ptr = malloc(size);
-	if (ptr != NULL && str != NULL)
+
+	if (str == NULL || ptr == NULL)
+	{
+		printf("%s\n", "failed to allocate memory");
+	}
+	else
 	{
 		for (i = 0; i < size; i++)
 		{
 			ptr[i] = str[i];
 		}
 	}
-	else
-	{
-		printf ("%s\n", "failed to allocate memory");
-	}
-
 	return (ptr);
 }
