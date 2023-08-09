@@ -41,11 +41,11 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		for (i = 0; i < size1; i++)
+		for (i = 0; i <= size1; i++)
 		{
 			ptr[i] = s1[i];
 		}
-		for (j = i; j < size1 + size2; j++)
+		for (j = i; j <= size1 + size2; j++)
 		{
 			ptr[j] = s2[k];
 			k++;
