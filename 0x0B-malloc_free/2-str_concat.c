@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	}
 		for (size2 = 0; s1[size2] != '\0'; size2++)
 			;
-	ptr = malloc(size1 + size2 + 1);
+	ptr = malloc(size1 + size2 + 2);
 	if (ptr == NULL)
 	{
 		printf("%s\n", "failed to allocate memory");
