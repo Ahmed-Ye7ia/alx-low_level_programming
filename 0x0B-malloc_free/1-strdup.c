@@ -26,6 +26,10 @@ char *_strdup(char *str)
 			ptr[i] = str[i];
 		}
 	}
+	else
+	{
+		printf ("%s\n", "failed to allocate memory")
+	}
 
 	return (ptr);
 }
