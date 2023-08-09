@@ -16,24 +16,18 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		size1 = 1;
+		s1 = '\0';
 	}
-	else
+	for (size1 = 0; s1[size1] != '\0'; size1++)
 	{
-		for (size1 = 0; s1[size1] != '\0'; size1++)
-		{
-			;
-		}
+		;
 	}
 	if (s2 == NULL)
 	{
-		size2 = 1;
+		s2 = '\0';
 	}
-	else
-	{
 		for (size2 = 0; s1[size2] != '\0'; size2++)
 			;
-	}
 	ptr = malloc(size1 + size2 + 1);
 	if (ptr == NULL)
 	{
