@@ -4,6 +4,7 @@
  * @array: the array
  * @size: size of the array
  * @cmp: pointer to compare function
+ * Return: the integer indes or -1 if not found
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -13,8 +14,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for (i = 0; i < size; i++)
 		{
-			if(cmp(array[i]));
-			return (i);
+			if (cmp(array[i]))
+				return (i);
 		}
 	}
 	return (-1);
