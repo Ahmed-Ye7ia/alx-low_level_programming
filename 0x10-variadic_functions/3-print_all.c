@@ -29,7 +29,7 @@ void format_int(char *separator, va_list ap)
 
 void format_float(char *separator, va_list ap)
 {
-	printf("%s%f", separator, va_arg(ap, int));
+	printf("%s%f", separator, va_arg(ap, double));
 }
 
 /**
@@ -58,7 +58,7 @@ void print_all(const char *const format, ...)
 		char *separator = "";
 		va_list ap;
 
-		token_t tokens s[] = {
+		token_t tokens[] = {
 			{"c", format_char},
 			{"i", format_int},
 			{"f", format_float},
