@@ -1,4 +1,4 @@
-#3. make -f 3-Makefile
+# Compilation variables
 
 CC = gcc
 SRC = main.c school.c
