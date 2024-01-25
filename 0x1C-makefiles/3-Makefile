@@ -10,11 +10,11 @@ all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) *~ *.swp $(NAME)
+	$(RM) *~ .*.swp $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
-fclean: clean ocleacn
+fclean: clean oclean
 
 re: fclean all
